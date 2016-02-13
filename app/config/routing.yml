@@ -1,0 +1,4 @@
+mping_core:
+    resource: "@MpingCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+

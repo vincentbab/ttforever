@@ -1,0 +1,617 @@
+
+.floatright {
+    float: right;
+    text-align: right;
+}
+
+.floatleft {
+    float: left;
+    text-align: left;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+
+
+.flash-notice {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+.flash-notice p {
+    padding: 0;
+    margin: 0.7em 0.9em;
+}
+
+.form-row {
+    
+}
+
+.form-errors {
+    color: red;
+}
+
+ul.form-errors {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.form-errors > li{
+    padding: 0;
+    margin: 0;
+}
+form label.required:after {
+    content: '*';
+    color: red;
+    font-weight: bold;
+}
+
+.photo-container {
+    float: left;
+    margin: 0 0.7em 0.7em 0;
+    width: 7em;
+}
+.photo-container img {
+    width: 100%;
+}
+p {
+    margin: 0.6em 0;
+}
+
+.player-container {
+    font-size: 95%;
+}
+
+.player-container > p {
+    margin: 0.5em 0;
+}
+
+.player-container > h3 {
+    margin: 0 !important;
+}
+
+.player-container .male, .player-container .female {
+    padding-left: 24px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.player-container .male {
+    background-image: url('../images/male.png');
+}
+.player-container .female {
+    background-image: url('../images/female.png');
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child {
+    margin: 0.6em 0;
+}
+.ui-bar h1, .ui-bar h2, .ui-bar h3, .ui-bar h4 {
+    margin: 0;
+}
+.ui-content > h3 {
+    margin: 0;
+}
+.text-overflow {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.ui-tabs {
+    padding: 0;
+}
+
+.ui-content {
+    padding: 0.7em;
+}
+.ui-content > *:first-child {
+    margin-top: 0 !important;
+}
+.ui-section {
+    margin: 0.7em 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+.ui-section:first-child {
+    margin-top: 0;
+}
+
+.ui-content-collapsible {
+    padding: 0 1em;
+}
+
+.ui-listview.match-list > li p {
+    margin: 0.4em 0;
+}
+.ui-listview.match-list .ui-btn {
+    padding: 0 0.7em;
+}
+.ui-listview.ui-small-padding .ui-btn {
+    padding: 0.4em 0.7em;
+}
+.ui-listview.ui-small-padding .ui-li-static {
+    padding: 0.4em 0.7em;
+}
+.ui-listview > .ui-li-divider {
+    padding: 0.4em 1em;
+}
+.ui-table th, .ui-table td {
+    padding: 0.2em 0.2em;
+}
+.ui-table.nopadding th, .ui-table.nopadding td {
+    padding: 0;
+}
+
+.ui-collapsible-button {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.ui-btn-separator {
+    width: 0 !important;
+    padding-left: 0.2em !important;
+    padding-right: 0.2em !important;
+    cursor: default !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    background: transparent !important;
+}
+
+.groups-grid a {
+    width: 3em;
+    margin: 0 !important;
+    text-overflow: initial;
+}
+
+.frame-container {
+    position: absolute;
+    top: 2.9em;
+    bottom: .1em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.match-list .good,
+.match-list .bad,
+.match-list .neutral {
+    padding: 0.2em 0.4em;
+}
+
+.good {
+    background-color: #0C0 !important;
+    color: #000;
+    display: inline-block !important;
+    text-shadow: none !important;
+}
+.bad {
+    background-color: #F00 !important;
+    color: #FFF;
+    display: inline-block !important;
+    text-shadow: none !important;
+}
+
+.perf, .perf .ui-li-count {
+    color: #0B0 !important;
+}
+.contre, .contre .ui-li-count {
+    color: #F00 !important;
+}
+.vnormal, .vnormal .ui-li-count {
+    color: #080 !important;
+}
+.dnormal, .dnormal .ui-li-count {
+    color: #A00 !important;
+}
+
+.neutral {
+    background-color: #FF0 !important;
+    color: #000;
+    display: inline-block !important;
+    text-shadow: none !important;
+}
+
+li.male, li.male .ui-li-count {
+    color: #3388CC !important;
+}
+li.female, li.female .ui-li-count {
+    color: #E565A1 !important;
+}
+
+.licence-content h4 {
+    margin-bottom: 0;
+}
+
+.encounter-result {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.encounter-result td {
+    padding: 0;
+    vertical-align: top;
+}
+
+.encounter-result,
+.encounter-players,
+.encounter-games {
+    font-size: 90%;
+}
+
+.encounter-team {
+    width: 45%;
+    position: relative;
+}
+.encounter-team > div {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 0.5em;
+    left: 0;
+    padding: 0.1em;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.encounter-score {
+    white-space: nowrap;
+    text-align: center;
+}
+.encounter-score-a,
+.encounter-score-b {
+    display: inline-block;
+    background-color: #E9E9E9;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: 0.1em 0.2em;
+    margin: 0.5em 0.3em;
+    width: 1.3em;
+}
+
+.encounter-team-a {
+    text-align: right;
+}
+.encounter-team-b {
+    text-align: left;
+}
+
+.encounter-games .ui-bar,
+.encounter-players .ui-bar {
+    margin: 0;
+    text-align: center;
+    font-size: 95%;
+}
+
+.encounter-players tr,
+.encounter-games tr {
+    border-bottom: 1px solid #DDD;
+}
+
+.encounter-players .ui-link,
+.encounter-games .ui-link {
+    text-decoration: none;
+}
+.encounter-player-ranking {
+    font-size: 95%;
+    display: block;
+}
+
+.encounter-player-space {
+    width: 10%;
+}
+
+.encounter-player > div {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 0.2em;
+    left: 0;
+    padding: 0.1em;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.encounter-player-a,
+.encounter-player-b {
+    line-height: 1.4 !important;
+    white-space: nowrap;
+    width: 45%;
+    position: relative;
+}
+
+.encounter-player-a {
+    text-align: right !important;
+}
+.encounter-player-b {
+    text-align: left !important;
+}
+
+.encounter-games {
+    text-align: center;
+}
+.game-player-a {
+    text-align: right !important;
+}
+.game-player-b {
+    text-align: left !important;
+}
+
+.game-player-a,
+.game-player-b {
+    white-space: nowrap;
+    width: 45%;
+    position: relative;
+}
+
+.game-player > div {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 0.2em;
+    left: 0;
+    padding: 0.1em;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.game-score {
+    text-align: center !important;
+    white-space: nowrap;
+}
+.game-score-a,
+.game-score-b {
+    display: inline-block;
+    background-color: #E9E9E9;
+    border: 1px solid #DDD;
+    border-radius: 2px;
+    padding: 0.1em 0.2em;
+    margin: 0 0.3em;
+    width: 1.3em;
+}
+
+/*.encounter-player-a,
+.encounter-player-b {
+    width: 50%;
+    background-color: #EEE;
+}
+
+.encounter-player-b {
+    text-align: right !important;
+}
+
+.encounter-result .ui-table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.encounter-result .ui-table td {
+    padding: 0.4em 0.5em;
+}
+
+.encounter-players,
+.encounter-games {
+    font-size: 90%;
+}
+
+.encounter-result,
+.encounter-players,
+.encounter-games {
+    margin-bottom: 0.6em;
+}
+
+.encounter-players tr {
+    border-bottom: 1px solid #FFF;
+}
+
+.encounter-score {
+    background-color: #E9E9E9;
+    font-weight: bold;
+}
+.encounter-team {
+    background-color: #E9E9E9;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.encounter-games tr {
+    border-bottom: 1px solid #E9E9E9;
+}
+.encounter-games .ui-bar {
+    margin: 0;
+    text-align: center;
+}
+.game-score {
+    background-color: #E9E9E9;
+    border: 1px solid #FFF;
+}
+.game-player {
+    background-color: #E9E9E9;
+    border: 1px solid #FFF;
+    white-space: nowrap;
+    max-width: 45%;
+}*/
+
+.custom-corners .ui-bar {
+    -webkit-border-top-left-radius: inherit;
+    border-top-left-radius: inherit;
+    -webkit-border-top-right-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.custom-corners .ui-body {
+    border-top-width: 0;
+    -webkit-border-bottom-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    -webkit-border-bottom-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.nclub {
+    font-size: 80%;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.ui-listview li.li-label {
+    background-color: #e9e9e9 !important;
+    font-weight: bold;
+}
+.adv-classement > li {
+    position: relative;
+}
+
+.hbar-label {
+    position: absolute;
+}
+
+.hbar {
+    height: 20px;
+    padding: 0 35px 0 30px;
+}
+.hbar-cat {
+    padding-left: 90px;
+}
+
+.hbar-t {
+    height: 100%;
+    color: white;
+}
+
+.hbar-1, .hbar-2 {
+    height: 100%;
+    font-size: 85%;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.hbar-1 > span, .hbar-2 > span {
+    text-shadow: none;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+}
+
+.hbar-v {
+    background-color: #0B0;
+}
+.hbar-d {
+    background-color: #F00;
+}
+.hbar-m {
+    background-color: #3388CC;
+}
+.hbar-f {
+    background-color: #E76DA9;
+}
+
+.ui-graphic {
+    display: table;
+    margin: 1em 0;
+    width: 100%;
+}
+.ui-graphic-row {
+    display: table-row;
+}
+
+.ui-graphic-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ui-graphic-cell:last-child {
+    padding-left: 1em;
+}
+.ui-graphic-cell:first-child {
+    width: 100%;
+}
+
+.ui-graphic-row .ui-listview {
+    margin: 0;
+    width: 100%;
+}
+
+.ui-graphic-row canvas {
+    width: 100px;
+    height: 100px;
+}
+
+.btn-maps {
+    float: right;
+    margin-right: 0 !important;
+}
+
+.ui-content .responsive-container .ui-listview-inset,
+.ui-content .responsive-container .ui-graphic,
+.ui-content .responsive-container .ui-section
+{
+    margin: 0;
+}
+.ui-content .responsive-container {
+    margin: 1em 0;
+}
+
+.responsive-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+.responsive-block:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .responsive-container-3 > .responsive-block {
+        width: 50%;
+    }
+    .responsive-container-3 > .responsive-block:first-child {
+        padding-right: 1em;
+    }
+    .responsive-container-3 > .responsive-block:last-child {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .responsive-container-2 > .responsive-block {
+        width: 50%;
+        margin-bottom: 0;
+        padding-right: 1em;
+    }
+    .responsive-container-2 > .responsive-block:last-child {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .responsive-container-3 > .responsive-block {
+        width: 33.333%;
+        margin-bottom: 0;
+        padding-right: 1em;
+    }
+    .responsive-container-3 > .responsive-block:last-child {
+        width: 33.333%;
+        padding-right: 0;
+    }
+}
+
+.ui-listview > li.ui-li-checkbox {
+    padding: 0
+}
+
+li.ui-li-checkbox fieldset.ui-controlgroup {
+    margin: 0;
+}
+
+li.ui-li-checkbox .ui-btn {
+    border: 0;
+    border-radius: 0 !important;
+}

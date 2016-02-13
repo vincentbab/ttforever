@@ -1,0 +1,37 @@
+parameters:
+    #fftt.cache_dir: %kernel.root_dir%/fftt_cache
+
+services:
+    validator.fftt.licence:
+        class: Mping\CoreBundle\Validator\Constraints\FfttLicenceValidator
+        arguments: [@fftt]
+        tags:
+            - { name: validator.constraint_validator, alias: fftt_licence }
+            
+    pdo:
+        class: PDO
+        arguments:
+            - "mysql:host=%database_host%;port=%database_port%;dbname=%database_name%"
+            - "%database_user%"
+            - "%database_password%"
+        calls:
+            - [setAttribute, [3, 2]] # \PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION
+        
+    session.handler.pdo:
+        class:     Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler
+        arguments: ["@pdo", "%session.pdo.db_options%"]
+            
+    fftt:
+        class: Mping\CoreBundle\Fftt\Service
+        arguments: [%fftt.app.id%, %fftt.app.key%]
+        calls:
+            - [setSerial, %fftt.serial%]
+            - [setCache, @fftt_cache]
+        
+    fftt_cache:
+        class: Doctrine\Common\Cache\ApcCache
+        
+    kernel.listener.bot_listener:
+        class: Mping\CoreBundle\EventListener\BotListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }

@@ -1,0 +1,181 @@
+home:
+    pattern:  /
+    defaults: { _controller: MpingCoreBundle:Home:index }
+    
+userRegister:
+    pattern:  /inscription
+    defaults: { _controller: MpingCoreBundle:User:register }
+    
+userLogin:
+    pattern: /connexion
+    defaults: { _controller: MpingCoreBundle:User:login }
+
+userLogout:
+    pattern: /deconnexion
+    defaults: { _controller: MpingCoreBundle:User:logout }
+
+userCheck:
+    pattern: /verification
+    defaults: { _controller: MpingCoreBundle:User:check }
+
+profile:
+    pattern: /mon-profil
+    defaults: { _controller: MpingCoreBundle:User:profile }
+    
+profileClub:
+    pattern: /mon-club
+    defaults: { _controller: MpingCoreBundle:User:profileClub }
+    
+settings:
+    pattern: /parametres
+    defaults: { _controller: MpingCoreBundle:User:settings }
+    
+resetPasswordRequest:
+    pattern: /mot-de-passe-oublie
+    defaults: { _controller: MpingCoreBundle:User:resetPasswordRequest }
+
+resetPasswordRequestSent:
+    pattern: /envoie-email-mot-de-passe/{email}
+    defaults: { _controller: MpingCoreBundle:User:resetPasswordRequestSent }
+    
+resetPassword:
+    pattern: /reinitialiser-mot-de-passe/{token}
+    defaults: { _controller: MpingCoreBundle:User:resetPassword }
+    
+favorites:
+    pattern: /favoris
+    defaults: { _controller: MpingCoreBundle:User:favorites }
+    
+addFavorite:
+    pattern: /ajouer-favoris
+    defaults: { _controller: MpingCoreBundle:User:addFavorite }
+    
+removeFavorite:
+    pattern: /supprimer-favoris
+    defaults: { _controller: MpingCoreBundle:User:removeFavorite }
+    
+rules:
+    pattern:  /reglements
+    defaults: { _controller: MpingCoreBundle:Home:rules }
+    
+rule:
+    pattern:  /reglements/{rule}
+    defaults: { _controller: MpingCoreBundle:Home:rule }
+    
+players:
+    pattern:  /joueurs
+    defaults: { _controller: MpingCoreBundle:Home:players }
+    
+playerSearch:
+    pattern:  /joueurs/recherche
+    defaults: { _controller: MpingCoreBundle:Home:playerSearch }
+
+player:
+    pattern:  /joueur/{licence}
+    defaults: { _controller: MpingCoreBundle:Home:player }
+    
+playerRefresh:
+    pattern:  /joueur/{licence}/refresh
+    defaults: { _controller: MpingCoreBundle:Home:playerRefresh }
+    
+playerSpid:
+    pattern:  /joueur/{licence}/spid
+    defaults: { _controller: MpingCoreBundle:Home:playerSpid }
+    
+playerGames:
+    pattern:  /joueur/{licence}/parties
+    defaults: { _controller: MpingCoreBundle:Home:playerGames }
+    
+playerHistory:
+    pattern:  /joueur/{licence}/historique
+    defaults: { _controller: MpingCoreBundle:Home:playerHistory }
+    
+clubs:
+    pattern:  /clubs
+    defaults: { _controller: MpingCoreBundle:Home:clubs }
+    
+clubSearch:
+    pattern:  /clubs/recherche
+    defaults: { _controller: MpingCoreBundle:Home:clubSearch }
+    
+club:
+    pattern:  /club/{numero}
+    defaults: { _controller: MpingCoreBundle:Home:club }
+    
+clubRefresh:
+    pattern:  /club/{numero}/refresh
+    defaults: { _controller: MpingCoreBundle:Home:clubRefresh }
+    
+clubPlayers:
+    pattern:  /club/{numero}/joueurs
+    defaults: { _controller: MpingCoreBundle:Home:clubPlayers }
+    
+clubTeams:
+    pattern:  /club/{numero}/equipes
+    defaults: { _controller: MpingCoreBundle:Home:clubTeams }
+    
+championships:
+    pattern:  /championnats
+    defaults: { _controller: MpingCoreBundle:Home:championships }
+
+championshipsZone:
+    pattern:  /championnats/zone
+    defaults: { _controller: MpingCoreBundle:Home:championshipsZone }
+    
+championshipsReg:
+    pattern:  /championnats/regional
+    defaults: { _controller: MpingCoreBundle:Home:championshipsReg }
+    
+championshipsDep:
+    pattern:  /championnats/departemental
+    defaults: { _controller: MpingCoreBundle:Home:championshipsDep }
+    
+championshipEvents:
+    pattern:  /championnats/{organisme}
+    defaults: { _controller: MpingCoreBundle:Home:championshipEvents }
+    
+championshipTeamDivisions:
+    pattern:  /championnats-equipes/{organisme}/epreuve/{epreuve}
+    defaults: { _controller: MpingCoreBundle:Home:championshipTeamDivisions }
+    
+championshipTeamGroup:
+    pattern:  /championnats-equipes/division/{division}/{poule}
+    defaults: { _controller: MpingCoreBundle:Home:championshipTeamGroup }
+    
+championshipTeamGroupAll:
+    pattern:  /championnats-equipes/division/{division}
+    defaults: { _controller: MpingCoreBundle:Home:championshipTeamGroup }
+    
+championshipTeamEncounter:
+    pattern:  /championnats-equipes/rencontre/{link}
+    defaults: { _controller: MpingCoreBundle:Home:championshipTeamEncounter }
+    
+championshipSingleDivisions:
+    pattern:  /championnats-indiv/{organisme}/epreuve/{epreuve}
+    defaults: { _controller: MpingCoreBundle:Home:championshipSingleDivisions }
+    
+championshipSingleGroup:
+    pattern:  /championnats-indiv/division/{division}/{groupe}
+    defaults: { _controller: MpingCoreBundle:Home:championshipSingleGroup }
+    
+championshipSingleGroupAll:
+    pattern:  /championnats-indiv/division/{division}
+    defaults: { _controller: MpingCoreBundle:Home:championshipSingleGroup }
+    
+championshipSingleEncounter:
+    pattern:  /championnats-indiv/rencontre/{link}
+    defaults: { _controller: MpingCoreBundle:Home:championshipTeamEncounter }
+    
+    
+licences:
+    pattern:  /licences
+    defaults: { _controller: MpingCoreBundle:Home:licences }
+    
+licenceSearch:
+    pattern:  /licences/recherche
+    defaults: { _controller: MpingCoreBundle:Home:licenceSearch }
+
+licence:
+    pattern:  /licence/{licence}
+    defaults: { _controller: MpingCoreBundle:Home:licence }
+    
