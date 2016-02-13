@@ -1,2 +1,2 @@
-# ttforever
-TTForever Website
+# TTForever
+TTForever Website source code
